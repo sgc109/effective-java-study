@@ -1,5 +1,4 @@
-## Consider static factory methods instead of constructors
-<br/>
+## Item 1. Consider static factory methods instead of constructors
 <br/>
 
 * ### 장점
