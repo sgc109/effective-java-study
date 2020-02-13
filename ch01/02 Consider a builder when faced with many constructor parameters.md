@@ -3,7 +3,7 @@
 
 * ### 문제점
   - 생성자 파라미터가 많고, 특히 Optional 한 파라미터가 많은 경우 모든 경우에 대해 생성자를 만들 순 없음
-  - 그래서 예전엔 *Telescoping constructor pattern* 혹은, *JavaBeans pattern* 가 사용되기도 했는데, 많은 문제점이 있음.
+  - 그래서 예전엔 **Telescoping constructor pattern** 혹은, **JavaBeans pattern** 가 사용되기도 했는데, 문제점이 있음.
 
 * **Telescoping constructor pattern**
   - public MyClass(int a) { ... }
