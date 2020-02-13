@@ -1,4 +1,4 @@
-## Item 3. Enforce the singleton property with a private constructor or an enum type.md
+## Item 3. Enforce the singleton property with a private constructor or an enum type
 <br/>
 
 * ### 문제점
