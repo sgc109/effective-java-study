@@ -22,6 +22,8 @@
 
 * ### 장점
   - Class hierarchies 에 잘 맞는다 (Build 하려는 Class 와 그 내부의 Builder Class 를 같이 상속 받는다. 즉, 자식 클래스의 빌더도 부모 클래스의 빌더를 상속받는다)
+  - Parameter 를 셋팅해주는 각 메서드들이 자기자신(this)를 반환하기 때문에 chaining 으로 구현하기 좋다.
+  - 많은 수의 생성자가 필요하지 않다.(필수 parameters 로 구성된 생성자와 Builder 를 받는 생성자, 이렇게 두개면 된다.)
 
 * ### 단점
   - 객체를 생성하기 위해서는 항상 빌더를 생성해야하기 때문에 Performance-critical 한 상황에서는 문제일 수가 있다.
