@@ -22,7 +22,6 @@
 
 * ### 장점
   - Class hierarchies 에 잘 맞는다 (Build 하려는 Class 와 그 내부의 Builder Class 를 같이 상속 받는다. 즉, 자식 클래스의 빌더도 부모 클래스의 빌더를 상속받는다)
-  - 
 
 * ### 단점
   - 객체를 생성하기 위해서는 항상 빌더를 생성해야하기 때문에 Performance-critical 한 상황에서는 문제일 수가 있다.
