@@ -1,4 +1,4 @@
-# 조슈아 블로크의 Effective Java 스터디
+# 조슈아 블로의 Effective Java 스터디
 
 <br/>
 
