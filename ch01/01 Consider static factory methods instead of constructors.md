@@ -2,7 +2,7 @@
 <br/>
 
 * ### 장점
-  - 이름으로 return 하는 object 를 설명 가능
+  - 생성자와는 다르게 메서드 이름으로 return 하는 object 를 설명 가능
   - Return 하는 object 의 type 을 다양하게 할 수 있음 (subclass 나 interface) (interface 내부에 interface 를 구현하는 private class 형태의 구현체를 두고 이를 interface type 으로 return 하도록 구현하면 encapsulation 이 가능. Collection 가 예)
   - 매번 새로운 instance 를 생성하지 않도록 구현하는것이 가능.(Singleton)
   - Input parameter 에 따라 다른 object 를 return 를 반환하는 것이 가능하다.
