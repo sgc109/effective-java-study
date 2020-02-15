@@ -5,7 +5,9 @@
 이런 class 들은 사람들이 남용해왔기 때문에 좋지않은 평판을 가지고 있지만, 이러한 class 는 적절한 사용처가 있다.
 
 - Primitive 값이나 Array 에 대해 서로 관련이 있는 method 들끼리 grouping 할 때
+  * 예) java.lang.Math, java.util.Arrays
 - Factory 를 포함한 static methods 들을 grouping 할 때
+  * 예) java.util.Collections
 - Final class 의 method 들을 grouping 할 때
 
 ### 문제
