@@ -24,4 +24,4 @@ Singleton 을 구현하는 방법은 일반적으로 두가지가 있고, 추가
   - Reflection attack 에서도 하나의 instance 를 보장해준다
   - 이 방식이 조금은 부자연스럽게 느껴질 수도 있는데, single-element enum type 은 항상 싱글톤을 구현하는 최고의 방법이다.
   - Superclass 를 상속받아야하는 경우에는 사용할 수 없다
-  - +Android의 경우 Object 생성시 Context 를 넘겨주어야 하는 등 꼭 런타임에 instantiation 을 해야하는 경우에는 사용할 수 없다
+  - Android의 경우 Object 생성시 Context 를 넘겨주어야 하는 등 꼭 런타임에 instantiation 을 해야하는 경우에는 사용할 수 없다
