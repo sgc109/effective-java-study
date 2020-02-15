@@ -19,6 +19,7 @@
   - 이런 경우 디버깅하기가 힘들다
   - Thread safety 를 위해 좀 더 많은 노력이 필요하다
   - Setter 가 있기때문에 Immutable 하게 하지 못한다
+  - Builder pattern 은 final 로 property 가 선언되어 있기 때문에 object 를 사용하는 순간엔 값을 변경할 수 없지만, JavaBeans pattern 은 property 들을 세팅해주는 중간에 object 를 사용할 수 있기 때문에 문제가 생길 수 있다.
   
 
 * ### 장점
