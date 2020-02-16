@@ -1,4 +1,4 @@
-## Item 5. Prefer dependency injection to hardwiring resources.md
+## Item 5. Prefer dependency injection to hardwiring resources
 <br/>
 
 ### 문제
