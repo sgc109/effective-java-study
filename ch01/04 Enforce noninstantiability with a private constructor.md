@@ -1,4 +1,4 @@
-## Item 4. Enforce noninstantiability with a private constructor.md
+## Item 4. Enforce noninstantiability with a private constructor
 <br/>
 
 가끔 static methods 와 static fields 를 grouping 하는 class 를 만들고 싶을 것이다.
