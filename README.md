@@ -4,7 +4,7 @@
 
 | Chapter 	| Category                                                                                           	| Item No. 	| Done(:white_check_mark:) 	|
 |:-------:	|----------------------------------------------------------------------------------------------------	|:--------:	|:------------------------:	|
-|    1    	| [Creating and Destroying Objects](https://github.com/sgc109/effective-java-study/tree/master/ch01) 	|   1 ~ 9  	|                          	|
+|    1    	| [Creating and Destroying Objects](ch01) 	                                                          |   1 ~ 9  	|                          	|
 |    2    	| Methods Common to All Objects                                                                      	|  10 ~ 14 	|                          	|
 |    3    	| Classes and Interfaces                                                                             	|  15 ~ 25 	|                          	|
 |    4    	| Generics                                                                                           	|  26 ~ 33 	|                          	|
