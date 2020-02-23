@@ -5,7 +5,7 @@
 | Chapter 	| Category                                                                                           	| Item No. 	| Done                     	|
 |:-------:	|----------------------------------------------------------------------------------------------------	|:--------:	|:------------------------:	|
 |    1    	| [Creating and Destroying Objects](ch01) 	                                                          |   1 ~ 9  	|    :white_check_mark:    	|
-|    2    	| Methods Common to All Objects                                                                      	|  10 ~ 14 	|                          	|
+|    2    	| [Methods Common to All Objects](ch02)                                                              	|  10 ~ 14 	|                          	|
 |    3    	| Classes and Interfaces                                                                             	|  15 ~ 25 	|                          	|
 |    4    	| Generics                                                                                           	|  26 ~ 33 	|                          	|
 |    5    	| Enums and Annotations                                                                              	|  34 ~ 41 	|                          	|
