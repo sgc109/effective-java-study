@@ -44,7 +44,7 @@
 
 ### 그럼에도 사용하는 이유
 
-* Client 에서 실수로 *close* 를 호출하지 않았을 때 보험용으로 좋음. 메모리 반환을 안하는 것보단 늦게라도 하는게 나으니까
+* Client 에서 실수로 *close* 를 호출하지 않았을 때 보험(safety nets)용으로 좋음. 메모리 반환을 안하는 것보단 늦게라도 하는게 나으니까
 * FileInputStream, FileOutputStream, ThreadPoolExecutor, java.sql.Connection 등은 보험용으로 finalizer 를 갖고있다
 <br/>
 
