@@ -10,5 +10,5 @@
 |     5    	| [Prefer dependency injection to hardwiring resources](05.md)                       	| :white_check_mark: 	|
 |     6    	| [Avoid creating unnecessary objects](06.md)                                        	| :white_check_mark: 	|
 |     7    	| [Eliminate obsolete object references](07.md)                                      	| :white_check_mark: 	|
-|     8    	| [Avoid finalizers and cleaners](08.md)                                             	|                    	|
+|     8    	| [Avoid finalizers and cleaners](08.md)                                             	| :white_check_mark: 	|
 |     9    	| [Prefer try-with-resources to try-finally](09.md)                                  	|                    	|
