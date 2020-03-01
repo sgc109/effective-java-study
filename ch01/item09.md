@@ -12,5 +12,5 @@
 
 ### try-with-resources 장점
 * *try-with-resources* 문의 try() 안에 선언된 AutoClosable 을 구현하는 object 들은 statement 가 끝날 때 자동으로 close() 메소드가 호출됨
-* 여러개의 예외가 발생하는 경우 앞서 발생한 예외들을 suppress 하여 갖고있다가 stacktrace 에서 보여준다(close() 에서 발생하는 예외를 suppress)
+* 여러개의 예외가 발생하는 경우 앞서 발생한 예외들을 suppress 하여 갖고있다가 stacktrace 에서 보여준다(close() 에서 발생하는 예외를 suppress) (addSuppress() 를 통해 직접 suppress 해야)
 * *Throwable.getSuppressed* 메소드를 통해 suppress 된 예외들에 접근할 
