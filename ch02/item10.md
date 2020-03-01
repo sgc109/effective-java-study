@@ -3,6 +3,7 @@
 
 * equals 를 오버라이딩할 땐 지켜야할 규칙이 있다
 * equals 는 기본적으로 같은 reference 인지를 체크하도록 구현되어있다
+* **꼭 해야되는 경우가 아니라면 equals 를 override 하지 마라! 대부분의 경우 Object 로부터 상속받은 equals 는 우리가 원하는 대로 동작할것이다**
 
 ### equals 를 오버라이드 하지 않는게 더 좋은 경우
 * 각 인스턴스가 태생적으로 유일한 경우(e.g. Thread)
@@ -16,7 +17,7 @@
 * 게다가 map key, set element 의 역할을 하기도 하므로
 * 단, Enum 은 예외적으로 안해도 됨
 
-### 필수 규칙
+### 필수 규칙(general contract)
 * 반사(Relexive)
   - x.equals(x) 는 true
   - 실수로 위반하기 힘듬
@@ -133,3 +134,12 @@ final class PhoneNumber {
     }
 }
 ```
+### 추가 사항
+* *equals* 를 Override 할 땐 항상 *hashCode* 도 Override 해라
+* *equals* 메소드의 argument type 은 꼭 **Object** 여야한다.
+  - 다른 타입으로 선언했다면 사실은 **override** 한것이 아니라 **overload** 를 한것이다
+  - @Override annotation 을 써서 실수를 줄여라
+* *equals* 를 작성하고 테스트하는 것을 대신해주는 *Google 의 Framework 인 AutoValue* 를 쓰면 된다
+  - annotation 하나만 붙여주면 자동 생성해준다
+  - 대부분의 경우 직접 작성한 
+ 
