@@ -2,7 +2,7 @@
 <br/>
 
 * equals 를 오버라이딩할 땐 꼭 지켜야할 5가지 필수 규칙이 있다
-* equals 는 기본적으로 같은 reference 인지를 체크하도록 구현되어있다
+* Object 의 equals 는 같은 reference 인지를 체크하도록 구현되어있다
 * **꼭 해야되는 경우가 아니라면 equals 를 override 하지 마라! 대부분의 경우 Object 로부터 상속받은 equals 는 우리가 원하는 대로 동작할것이다**
 
 ### equals 를 오버라이드 하지 않는게 더 좋은 경우
