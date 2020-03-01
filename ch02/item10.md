@@ -19,8 +19,30 @@
 ### 필수 규칙
 * 반사(Relexive)
   - x.equals(x) 는 true
+  - 실수로 위반하기 힘듬
+  - 위반할 시, collection 에 이 클래스의 인스턴스를 삽입해도 존재하지 않다고 인식할것
 * 대칭(Symmetric)
   - x.equals(y) 는 y.equals(x) 과 같아야함
+  - 실수로 위반하기 어렵지 않음
+  ```java
+  final class CaseIntensitiveString {
+    private final String s;
+
+    public CaseIntensitiveString(String s) {
+        this.s = Objects.requireNonNull(s);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof CaseIntensitiveString)
+            return s.equalsIgnoreCase(
+                    ((CaseIntensitiveString) o).s);
+        if (o instanceof String) // 단방향으로만 대소문자를 무시하고, String 의 인스턴스는 대소문자를 구분함
+            return s.equalsIgnoreCase((String) o);
+        return false;
+    }
+  }
+  ```
 * 추이(Transitive)
   - x.equals(y) 가 true, y.equals(z) 가 true 면 x.equals(z) 는 true
 * 일관성(Consistent)
