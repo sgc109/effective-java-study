@@ -37,7 +37,7 @@
         if (o instanceof CaseIntensitiveString)
             return s.equalsIgnoreCase(
                     ((CaseIntensitiveString) o).s);
-        if (o instanceof String) // 단방향으로만 대소문자를 무시하고, String 의 인스턴스는 대소문자를 구분함
+        if (o instanceof String) // 이 클래스만 대소문자를 무시하고, String 의 인스턴스는 대소문자를 구분함
             return s.equalsIgnoreCase((String) o);
         return false;
     }
