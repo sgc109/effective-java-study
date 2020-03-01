@@ -1,6 +1,7 @@
 ## Item 10. Obey the general contract when overriding equals
 <br/>
 
+* equals 를 오버라이딩할 땐 지켜야할 규칙이 있다
 * equals 는 기본적으로 같은 reference 인지를 체크하도록 구현되어있다
 
 ### equals 를 오버라이드 하지 않는게 더 좋은 경우
