@@ -43,6 +43,21 @@
     }
   }
   ```
+  - 만약 아래와 같은 코드를 실행한다면 어떻게 될까?
+  ```java
+  CaseIntensitiveString cis = new CaseIntensitiveString("Polish");
+  String s = "polish";
+
+  List<CaseIntensitiveString> list = new ArrayList<>();
+  list.add(cis);
+
+  System.out.println(list.contains(s));  
+  ```
+  - true, false, 혹은 runtime exception. JDK 구현에 따라 달라질 것이다
+  - 이를 해결하려면 그냥 String 과도 함께 동작하게 하려는 시도를 하지 말아야 한다
+  ```java
+  return o instanceof CaseInsensitiveString && ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
+  ```
 * 추이(Transitive)
   - x.equals(y) 가 true, y.equals(z) 가 true 면 x.equals(z) 는 true
 * 일관성(Consistent)
