@@ -60,6 +60,12 @@
   ```
 * 추이(Transitive)
   - x.equals(y) 가 true, y.equals(z) 가 true 면 x.equals(z) 는 true
+  - 상속 관계인 두 클래스를 equals 로 비교할 때 문제가 발생하기 쉽다
+  - 상속 대신 composition 을 사용하면 임시방편으로 해결가능하다
+  - Java platform libraries 중에서도 상속을 받아 value component 를 추가한 클래스들이 있다
+  - java.sql.Timestamp 는 java.util.Date 를 상속받아 nanoseconds 필드를 추가한것이다
+  - 이 둘을 같은 collection 에 넣고 사용하면 문제가 발생할 수 있다
+  - 하지만 만약 superclass 가 abstract class 라면 인스턴스화 될 수 없기에 위의 문제가 없다
 * 일관성(Consistent)
   - equals 에서 사용되는 정보가 변경되지 않는 한, x.equals(y) 는 항상 같은 결과는 내야함
 * x.equals(null) 은 false 여야함
