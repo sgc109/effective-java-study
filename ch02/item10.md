@@ -96,4 +96,40 @@
   - float 라면 static Float.compare(float, float) 를 사용해라
   - double 이라면 Double.compare(double, double) 를 사용해라
   - 만약 null 일 수 있는 object reference 는 NPE 가 발생할 수 있으므로 Object.equals(Object, Object) 를 사용해라
+* 참고사항
+  - 성능을 위해, 다를 가능성이 높은 field 일수록, 비교 비용이 적은 field 일 수록 먼저 비교하자(둘다라면 가장 먼저해야한다)
+  - 다른 field 들을 통해 계산되는 field 까지 비교할 필요는 없으나 연산을 줄여줄 수도 있다
+  - 예를 들어, 두 다각형 객체 넓이가 다르다면 굳이 선분과 꼭지점까지 비교할 필요도 없다
+  - **equals 메소드의 작성은 스스로 세 가지 질문을 묻고 끝낸다. symmetric 한가? transitive 한가? consistent 한가? 그리고 유닛 테스트도 작성해라**
+  - 물론 reflexitivy 와 non-nullity 도 만족돼야하지만 대체로 알아서 만족된다
 
+### 올바른 equals() 예시
+```java
+final class PhoneNumber {
+    private final short areaCode, prefix, lineNum;
+
+    public PhoneNumber(int areaCode, int prefix, int lineNum) {
+        this.areaCode = rangeCheck(areaCode, 999, "area code");
+        this.prefix = rangeCheck(prefix, 999, "prefix");
+        this.lineNum = rangeCheck(lineNum, 9999, "line num");
+    }
+
+    private static short rangeCheck(int val, int max, String arg) {
+        if (val < 0 || val > max)
+            throw new IllegalArgumentException(arg + ": " + val);
+        return (short) val;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof PhoneNumber))
+            return false;
+        PhoneNumber pn = (PhoneNumber) o;
+        return areaCode == pn.areaCode &&
+                prefix == pn.prefix &&
+                lineNum == pn.lineNum;
+    }
+}
+```
