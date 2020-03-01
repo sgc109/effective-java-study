@@ -91,4 +91,9 @@
   - 앞서 타입 체크를 해서 문제 없다
 * 넷쨰, 비교하고자 하는 각각의 필드가 모두 일치하는 지를 체크해서 그렇다면 true, 아니면 false 를 리턴해라
   - 만약 interface 라면 method 를 통해 필드에 접근해라
-  - 
+  - field 가 float 과 double 이 아닌 primitive 타입이라면 == operator 를 사용해라
+  - object reference 라면 재귀적으로 equals 를 호출해라
+  - float 라면 static Float.compare(float, float) 를 사용해라
+  - double 이라면 Double.compare(double, double) 를 사용해라
+  - 만약 null 일 수 있는 object reference 는 NPE 가 발생할 수 있으므로 Object.equals(Object, Object) 를 사용해라
+
