@@ -1,7 +1,7 @@
 ## Item 11. Always override hashCode when you override equals
 <br/>
 
-* equal() 를 Override 했다면 동등성 비교에 사용되는 significant field 가 새롭게 설정되었다는 것이기 때문에 특정 경우(HashMap 등)동등성 비교에 사용되는 hashCode() 메소드도 항상 오버라이드 해주어야함
+* equal() 를 Override 했다면 동등성 비교에 사용되는 significant field 가 새롭게 설정되었다는 것이기 때문에 특정 경우(HashMap, HashSet 등)동등성 비교에 사용되는 hashCode() 메소드도 항상 오버라이드 해주어야함
 * hashCode 의 리턴값이 uniformly distributed 되지 않는 다면 서로 다른 오브젝트들 간의 충돌이 자주발생하여 HashMap 의 성능이 떨어질 수 있으며, 
 * 심한경우 hashCode 가 같은 값만 뱉어서 LinkedList 처럼 Linear 시간으로 동작할 수가 있다
 * HashMap 은 데이터를 검색할 때 우선 hashCode() 로 bucket 의 인덱스를 정하고, 해당 버킷의 LinkedList 상의 원소들끼리 equals 로 비교한다
@@ -19,8 +19,8 @@
 * 31 이어야하는 이유는 홀수이면서, 소수여서
     * 짝수이면 안되는 이유는, 2를 곱하는 행위는 단순 shift 연산이기 때문에 정보가 손실된다
 * 특별히 collision 을 덜 발생시키는 hash function 이 필요한것이 아니라면 Object.hash() 를 사용해라
-* 하지만 Object.hash 는 Array 인스턴스를 생성해야하고, primitive 타입의 원소도 boxing/unboxing 을 하기때문에 조금 더 느린경향이 있다
+* 하지만 Object.hash 는 Array 인스턴스를 생성해야하고, primitive 타입의 원소도 boxing/unboxing 을 하기때문에 조금 더 느린경향이 있기 때문에 속도가 중요하면 직접 구현해라
 * hash code 를 캐쉬해라
 * lazy initialize 해라
 * 성능을 위한답시고 중요한 필드를 hash code 계산에서 빼지 마라
-
+* Object 클래스의 hashCode() default 구현은 memory 주소를 기반으로 unique value 를 리턴 한다고 함
