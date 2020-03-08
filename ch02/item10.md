@@ -141,5 +141,5 @@ final class PhoneNumber {
   - @Override annotation 을 써서 실수를 줄여라
 * *equals* 를 작성하고 테스트하는 것을 대신해주는 *Google 의 Framework 인 AutoValue* 를 쓰면 된다
   - annotation 하나만 붙여주면 자동 생성해준다
-  - 대부분의 경우 직접 작성한 
+  - 대부분의 경우 직접 작성한 코드와 같다 
  
