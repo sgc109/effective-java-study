@@ -1,7 +1,7 @@
 ## Item 11. Always override hashCode when you override equals
 <br/>
 
-* equal() 를 Override 했다면 동등성 비교에 사용되는 significant field 가 새롭게 설정되었다는 것이기 때문에 특정 경우(HashMap, HashSet 등)동등성 비교에 사용되는 hashCode() 메소드도 항상 오버라이드 해주어야함
+* equal() 를 Override 했다면 동등성 비교에 사용되는 significant field 가 새롭게 설정되었다는 것이기 때문에 특정 경우(HashMap 등)동등성 비교에 사용되는 hashCode() 메소드도 항상 오버라이드 해주어야함
 * hashCode 의 리턴값이 uniformly distributed 되지 않는 다면 서로 다른 오브젝트들 간의 충돌이 자주발생하여 HashMap 의 성능이 떨어질 수 있으며, 
 * 심한경우 hashCode 가 같은 값만 뱉어서 LinkedList 처럼 Linear 시간으로 동작할 수가 있다
 * HashMap 은 데이터를 검색할 때 우선 hashCode() 로 bucket 의 인덱스를 정하고, 해당 버킷의 LinkedList 상의 원소들끼리 equals 로 비교한다
