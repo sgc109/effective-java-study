@@ -6,8 +6,8 @@
 |:-------:	|----------------------------------------------------------------------------------------------------	|:--------:	|:------------------------:	|
 |    1    	| [Creating and Destroying Objects](ch01) 	                                                          |   1 ~ 9  	|    :white_check_mark:    	|
 |    2    	| [Methods Common to All Objects](ch02)                                                              	|  10 ~ 14 	|                          	|
-|    3    	| Classes and Interfaces                                                                             	|  15 ~ 25 	|                          	|
-|    4    	| Generics                                                                                           	|  26 ~ 33 	|                          	|
+|    3    	| [Classes and Interfaces](ch03)                                                                     	|  15 ~ 25 	|                          	|
+|    4    	| [Generics](ch04)                                                                                   	|  26 ~ 33 	|                          	|
 |    5    	| Enums and Annotations                                                                              	|  34 ~ 41 	|                          	|
 |    6    	| Lambdas and Streams                                                                                	|  42 ~ 48 	|                          	|
 |    7    	| Methods                                                                                            	|  49 ~ 56 	|                          	|
