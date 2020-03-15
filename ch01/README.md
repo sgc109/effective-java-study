@@ -1,8 +1,8 @@
 ## Chapter 1. Creating and Destroying Objects
 <br/>
 
-| Item No. 	| Title                                                                              	|        Done        	|
-|:--------:	|------------------------------------------------------------------------------------	|:------------------:	|
+| Item No. 	| Title                                                                                 	|        Done        	|
+|:--------:	|---------------------------------------------------------------------------------------	|:------------------:	|
 |     1    	| [Consider static factory methods instead of constructors](item01.md)                   	| :white_check_mark: 	|
 |     2    	| [Consider a builder when faced with many constructor parameters](item02.md)            	| :white_check_mark: 	|
 |     3    	| [Enforce the singleton property with a private constructor or an enum type](item03.md) 	| :white_check_mark: 	|
