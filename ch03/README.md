@@ -5,7 +5,7 @@
 
 | Item No. 	| Title                                                                   	|        Done        	|
 |:--------:	|-------------------------------------------------------------------------	|:------------------:	|
-|    15    	| [Minimize the accessibility of classes and members](item15.md)          	|                    	|
+|    15    	| [Minimize the accessibility of classes and members](item15.md)          	| :white_check_mark: 	|
 |    16    	| [In public classes, use accessor methods, not public fields](item16.md) 	|                    	|
 |    17    	| [Minimize mutability](item17.md)                                        	|                    	|
 |    18    	| [Favor composition over inheritance](item18.md)                          	|                    	|
