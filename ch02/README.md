@@ -11,4 +11,4 @@
 |    11    	| [Always override hashCode when you override equals](item11.md) 	| :white_check_mark: 	|
 |    12    	| [Always override toString](item12.md)                          	| :white_check_mark: 	|
 |    13    	| [Override clone judiciously](item13.md)                        	|                    	|
-|    14    	| [Consider implementing Comparable](item14.md)                  	|                    	|
+|    14    	| [Consider implementing Comparable](item14.md)                  	| :white_check_mark: 	|
