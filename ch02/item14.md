@@ -1,7 +1,7 @@
 ## Item 14. Consider implementing Comparable
 <br/>
 
-> comparable 을 잘 구현해라
+> Comparable 을 잘 구현해라
 
 * 안그러면 compareTo 에 의존하는 Sorted collections(TreeSet, TreeMap) 혹은 검색이나 정렬 알고리즘을 포함하는 Arrays 가 비정상적으로 동작할 것
 * compareTo 를 작성하는 방법은 equals 와 거의 똑같지만(반사, 추이 등) 타입체크할 필요없다는게 equals 와의 차이(같은 타입이 아니면 컴파일이 안되기때문에)
