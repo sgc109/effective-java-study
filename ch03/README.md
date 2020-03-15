@@ -1,6 +1,6 @@
 ## Chapter 3. Classes and Interfaces
 
-* 
+* Class 와 interface 를 usable, robust, 그리고 flexible 하도록 구현하기 위한 가이드 라인
 <br/>
 
 | Item No. 	| Title                                                                   	|        Done        	|
