@@ -25,7 +25,7 @@
 * 이 경우는 직접 bucket 의 array 를 생성하여 각각의 bucket 에 대해 링크드리스트의 각 노드를 따라가면 직접 clone() 을 해줘야 한다.
 * **Object copy 를 하는 더 좋은 방법은 copy constructor 또는 copy factory 이다**
 * 같은 타입의 객체를 단 하나의 argument 로 받아서 복사함
-* interface 타입을 받아서 복사도 가능하다는 장점이 있음
+* interface 타입을 받아서 복사도 가능하다는 장점이 있음 
 * 대부분의 collection 클래스들은 Collection 이나 Map 을 인자로 받는 constructor 가 있음
 * 이를 보통 conversion constructors 혹은 conversion factories 라고 부름
 * 예를들어 HashSet 을 TreeSet 형태로 복사할 수도 있음(new TreeSet<>(s) 와같은 식으로)
