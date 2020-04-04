@@ -7,7 +7,7 @@
 |:--------:	|-------------------------------------------------------------------------	|:------------------:	|
 |    15    	| [Minimize the accessibility of classes and members](item15.md)          	| :white_check_mark: 	|
 |    16    	| [In public classes, use accessor methods, not public fields](item16.md) 	| :white_check_mark: 	|
-|    17    	| [Minimize mutability](item17.md)                                        	|                    	|
+|    17    	| [Minimize mutability](item17.md)                                        	| :white_check_mark: 	|
 |    18    	| [Favor composition over inheritance](item18.md)                          	|                    	|
 |    19    	| [Design and document for inheritance or else prohibit it](item19.md)     	|                    	|
 |    20    	| [Prefer interfaces to abstract classes](item20.md)                       	|                    	|
