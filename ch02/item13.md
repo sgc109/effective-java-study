@@ -1,6 +1,8 @@
 ## Item 13. Override clone judiciously
 <br/>
 
+##### Cloneable 과 clone() 으로 copy 를 구현하는 것은 단점이 매우 많기 때문에 copy constructors 나 copy factories 를 사용하라
+
 * mixin interface 로 의도된 인터페이스
 * Cloneable interface 에는 clone 메서드가 없다
 * 단순히 복제를 허용한다는 것을 나타내는 용도로 쓰이기 때문
