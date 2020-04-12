@@ -30,7 +30,7 @@ ol.add("I don't fit in");
 ```
 
 * array 는 제네릭과는 달리 reified 하다, 즉 런타임에도 타입에 대한 정보가 남아있다
-* 반면 제네릭은 erasure 라서 타입에 대한 정보가 런타임에 사라진다(List<Integer> 의 런타임 타입은 List 이다)
+* 반면 제네릭은 erasure 라서 타입에 대한 정보가 런타임에 사라진다(List&lt;Integer&gt; 의 런타임 타입은 List 이다)
 * 제네릭의 어레이를 만들면 컴파일이 안된다. 왜냐면 array 는 covariant 하므로 런타임에러가 날 수 있기 때문에 이러면 제네릭을 쓰는 이유가 사라짐
   
 ```java
