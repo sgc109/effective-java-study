@@ -10,6 +10,6 @@
 |    28    	| [Prefer lists to arrays](item28.md)                              	| :white_check_mark: 	|
 |    29    	| [Favor generic types](item29.md)                          	      | :white_check_mark: 	|
 |    30    	| [Favor generic methods](item30.md)                               	|                    	|
-|    31    	| [Use bounded wildcards to increase API flexibility](item31.md)  	|                    	|
-|    32    	| [Combine generics and varargs judiciously](item32.md)            	|                    	|
-|    33    	| [Consider typesafe heterogeneous containers](item33.md)         	|                    	|
+|    31    	| [Use bounded wildcards to increase API flexibility](item31.md)  	| :white_check_mark: 	|
+|    32    	| [Combine generics and varargs judiciously](item32.md)            	| :white_check_mark: 	|
+|    33    	| [Consider typesafe heterogeneous containers](item33.md)         	| :white_check_mark: 	|
